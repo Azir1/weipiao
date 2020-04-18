@@ -1,0 +1,81 @@
+nav ul {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+nav .logo {
+  display: block;
+  width: 147px;
+  height: 70px;
+  background-color: red;
+  background: url(../img/logoMsg.png);
+  margin-right: 20px;
+}
+
+.banner {
+  background: url(../img/bannerbg.png) no-repeat;
+}
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+}
+.banner .container .carousel {
+  padding-left: 0;
+}
+.banner .container .panel {
+  margin: 30px 0;
+  padding: 8px 4px;
+}
+.banner .container .panel .img {
+  margin-top: 10px;
+  height: 85px;
+  background: url(../img/img1.jpg);
+  background-size: 100% 100%;
+}
+.banner .container .panel p {
+  cursor: pointer;
+}
+.banner .container .panel p:hover {
+  color: #000;
+}
+.banner .container .panel p:nth-of-type(3) {
+  border-bottom: 1px dotted #666;
+  padding-bottom: 10px;
+}
+.banner .container .panel p:nth-of-type(5) {
+  padding-bottom: 0px;
+}
+.banner #carousel-id {
+  margin: 30px 0;
+  width: 875px;
+}
+
+.card {
+  margin-top: 20px;
+}
+.card .recommend {
+  height: 275px;
+  cursor: pointer;
+}
+.card .recommend p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.card .tab-content div:nth-of-type(1) img {
+  margin-top: 15px;
+  width: 100%;
+  height: 120px;
+}
+.card .tab-content div:nth-of-type(1) p:hover {
+  cursor: pointer;
+  color: #000;
+}
+.card .tab-content div:nth-of-type(1) p:nth-of-type(1) {
+  border-bottom: 1px dotted #ccc;
+  padding: 15px 0 10px 0;
+}
+
+/*# sourceMappingURL=index.css.map */
