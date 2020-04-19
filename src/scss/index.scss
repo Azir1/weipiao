@@ -60,7 +60,6 @@ nav{
 
 .card{
     margin-top: 20px;
-    
     .recommend{
         height: 275px;
         cursor: pointer;
@@ -93,4 +92,39 @@ nav{
     }
     
 
+}
+
+// tab切换
+.tab{
+    margin-top: 20px;
+    .tab-content .row:nth-of-type(1){
+            margin-top: 20px;
+            height: 320px;
+
+    }
+    .all{
+        cursor: pointer;
+    }
+}
+
+.hot{
+    >p:nth-of-type(1){
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    >p{
+        overflow: hidden;
+        padding: 8px 0;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        border-bottom: 1px dotted #eee;
+    }
+}
+
+
+// footer
+
+.footer{
+    padding: 40px 0;
+    color: #eee;
 }

@@ -36,9 +36,9 @@
                             </span>
                         </div>
                     </div>
-                    <li><a href="#">登陆</a></li>
-                    <li><a href="#">注册</a></li>
-                </ul>
+                    <li><a href="#" class="login">欢迎</a></li>
+                    <li><a href="#" class="logout">退出</a></li>
+                </ul>login
             </div>
         </div>
     </nav>
@@ -77,10 +77,10 @@
                     <div class="top">
                         <span class="h3">特惠看</span>
                         <p class='col-md-12 img'></p>
-                        <p class="text-muted">[苏州]2016迷笛电子音乐节(预售)</p>
+                        <!-- <p class="text-muted">[苏州]2016迷笛电子音乐节(预售)</p>
                         <p class="text-muted">穿着花裤子喝着小酒通宵达旦</p>
                         <p class="text-muted">2020刘若英世界巡回演唱会</p>
-                        <p class="text-muted">[上海]百老汇经典音乐剧--《狮子王》</p>
+                        <p class="text-muted">[上海]百老汇经典音乐剧--《狮子王》</p> -->
                     </div>
                 </div>
                 <!-- </div> -->
@@ -89,80 +89,457 @@
     </div>
     <!-- 卡片展示 -->
     <div class="container card">
-        <!-- <div class="row"> -->
-        <div class="col-md-2">
-            <div class="thumbnail recommend">
-                <img src="../img/5.jpg" alt="">
-                <div class="caption">
-                    <p>
-                        [上海]百老汇经典音乐剧《狮子王》
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail recommend">
-                <img src="../img/6.jpg" alt="">
-                <div class="caption">
-                    <p>
-                        [北京]陈奕迅 ANOTHER EASON'S LIFE演唱会北京站
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail recommend">
-                <img src="../img/7.jpg" alt="">
-                <div class="caption">
-                    <p>
-                        [深圳]逃跑计划2016巡回演唱会深圳站
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail recommend">
-                <img src="../img/8.jpg" alt="">
-                <div class="caption">
-                    <p>
-                        [北京]BJCC北京漫控潮流博览会
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- tab切换 -->
-        <div class="col-md-4">
-            <div class="thumbnail recommend">
-                <!-- <div class="col-md-3 wrap"> -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
-                            data-toggle="tab">首页</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
-                            data-toggle="tab">技能课</a>
-                    </li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
-                            data-toggle="tab">门票</a>
-                    </li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                        <img src="../img/img2.jpg" alt="">
-                        <p class="text-muted">[哈尔滨]梁静茹.你的名字是爱情演唱会</p>
-                        <p class="text-muted">[太原]蔡依林2016PLAY世界巡回演唱会</p>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="thumbnail recommend">
+                    <img src="../img/5.jpg" alt="">
+                    <div class="caption">
+                        <p>
+                            [上海]百老汇经典音乐剧《狮子王》
+                        </p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">22</div>
-                    <div role="tabpanel" class="tab-pane" id="messages">33</div>
-                    <div role="tabpanel" class="tab-pane" id="settings">44</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail recommend">
+                    <img src="../img/6.jpg" alt="">
+                    <div class="caption">
+                        <p>
+                            [北京]陈奕迅 ANOTHER EASON'S LIFE演唱会北京站
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail recommend">
+                    <img src="../img/7.jpg" alt="">
+                    <div class="caption">
+                        <p>
+                            [深圳]逃跑计划2016巡回演唱会深圳站
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail recommend">
+                    <img src="../img/8.jpg" alt="">
+                    <div class="caption">
+                        <p>
+                            [北京]BJCC北京漫控潮流博览会
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- tab切换 -->
+            <div class="col-md-4">
+                <div class="thumbnail recommend">
+                    <!-- <div class="col-md-3 wrap"> -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                data-toggle="tab">首页</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                data-toggle="tab">技能课</a>
+                        </li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                data-toggle="tab">门票</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <img src="../img/img2.jpg" alt="">
+                            <p class="text-muted">[哈尔滨]梁静茹.你的名字是爱情演唱会</p>
+                            <p class="text-muted">[太原]蔡依林2016PLAY世界巡回演唱会</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">22</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">33</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">44</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
+        <!-- banner -->
+        <div class="row">
+            <img src="../img/ad1.jpg" alt="" class="col-md-12">
+        </div>
     </div>
+    <!-- tab切换 -->
+    <div class="container tab">
+        <div class="row">
+            <div class="col-md-9">
+                <div role="tabpanel ">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#yan" aria-controls="yan" role="tab" data-toggle="tab">演唱会</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#sport" aria-controls="sport" role="tab" data-toggle="tab">体育赛事</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#wutai" aria-controls="wutai" role="tab" data-toggle="tab">舞台剧</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#child" aria-controls="child" role="tab" data-toggle="tab">儿童亲子</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#music" aria-controls="music" role="tab" data-toggle="tab">音乐会</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#show" aria-controls="show" role="tab" data-toggle="tab">展览活动</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="yan">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/5.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [上海]百老汇经典音乐剧《狮子王》
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/6.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [北京]陈奕迅 ANOTHER EASON'S LIFE演唱会
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/7.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [深圳]逃跑计划2016巡回演唱会深圳站
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/8.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [北京]BJCC北京漫控潮流博览会
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/5.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [上海]百老汇经典音乐剧《狮子王》
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/6.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [北京]陈奕迅 ANOTHER EASON'S LIFE演唱会
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/7.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [深圳]逃跑计划2016巡回演唱会深圳站
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail recommend">
+                                        <img src="../img/8.jpg" alt="">
+                                        <div class="caption">
+                                            <p>
+                                                [北京]BJCC北京漫控潮流博览会
+                                            </p>
+                                            <p>
+                                                <span class="h3 text-danger">180</span>元起
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="sport">体育赛事</div>
+                        <div role="tabpanel" class="tab-pane" id="wutai">舞台</div>
+                        <div role="tabpanel" class="tab-pane" id="child">亲子</div>
+                        <div role="tabpanel" class="tab-pane" id="music">音乐会</div>
+                        <div role="tabpanel" class="tab-pane" id="show">展览</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title ">
+                            <span class="text-muted h6">
+                                <span class="h4">历历在目</span> - 尽享每天不一样的精彩
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="h5">今天共&nbsp;<span class="text-success">9</span>&nbsp;场演出</p>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-success all">查看全部演出</p>
+            </div>
+        </div>
+    </div>
+    <!-- 场馆 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="text-success pull-right">全部场馆</span>
+                        <h3 class="panel-title">场馆推荐</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="thumbnail">
+                                <img src="../img/img7.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>近期演出</h3>
+                                    <p>[北京]恒源祥戏剧出品大型原创音乐剧《犹太人在上海》</p>
+                                    <p>
+                                        [北京]沪语话剧《永远的尹雪艳》
+                                    </p>
+                                    <p>
+                                        北京]恒源祥戏剧出品原创话剧《大商海》
+                                    </p>
+                                    <p>
+                                        [北京]百老汇经典音乐剧《音乐之声》中文版
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="thumbnail">
+                                <img src="../img/img7.jpg" alt="...">
+                                <div class="caption">
+                                    <h3>近期演出</h3>
+                                    <p>[北京]恒源祥戏剧出品大型原创音乐剧《犹太人在上海》</p>
+                                    <p>
+                                        [北京]沪语话剧《永远的尹雪艳》
+                                    </p>
+                                    <p>
+                                        北京]恒源祥戏剧出品原创话剧《大商海》
+                                    </p>
+                                    <p>
+                                        [北京]百老汇经典音乐剧《音乐之声》中文版
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body hot">
+                        <p class="h3">热销榜单</p>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../img/img5.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading h5">
+                                    [天津]天津中华曲苑相声专场
+                                </h4>
+                                <p>2016年1月1日~12月31日 天津中华曲苑</p>
+                                <p>
+                                    <span class="h4 text-success">50</span>元起
+                                </p>
+                            </div>
+                        </div>
+                        <p>[北京]陈奕迅 ANOTHER EASON'S LIFE</p>
+                        <p>[深圳]逃跑计划2016巡回演唱会深圳站</p>
+                        <p>[北京]BJCC北京漫控潮流博览会</p>
+                        <p>[贵阳]陈奕迅 ANOTHER EASON'S LIFE演唱会贵阳站</p>
+                        <p>[太原]2016岳云鹏相声专场太原站</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <nav class="navbar-default navbar-inverse">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-md-4">
+                    <img src="../img/footer_logo.png" alt="" class="col-md-6">
+                    <p class="col-md-6">
+                        <span>微信电影票官网</span>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/phoneIcon.png" alt="" class="col-md-3">
+                    <p class="col-md-6">
+                        <span>微信电影票官网</span>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/f_wx.png" alt="" class="col-md-3">
+                    <img src="../img/f_wpr.png" alt="" class="col-md-3">
+                    <p class="col-md-6">
+                        <span>微信电影票官网</span>
+                        <span>在线占好座，覆盖影院全国第一</span>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- 必须先引用jQuery -->
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/libs/layer/layer.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

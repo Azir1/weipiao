@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- enctype数据类上传 -->
+    <!-- name是后台接受数据的属性名 -->
+    <!-- <form action="http://localhost:9000/file/upimg" method="POST" enctype="multipart/form-data">
+        <input type="file" name="upimg">
+        <input type="submit" value="上传">
+    </form> -->
+
+    <!-- ajax上传 -->
+    <form action="">
+        <input type="file" name="upimg" id="">
+        <input type="button" value="上传" onclick=upload()>
+    </form>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        function upload() {
+            // 获取表单节点，获取文件详情
+            let img = $('[name="upimg"]')[0].files[0]
+            // 创建formdata对象(异步上传文件)
+            let formData = new FormData()
+            // formData.append('上传文件的key',上传的文件)
+            formData.append('upimg', img)
+            // 发送
+            $.ajax({
+                type: "post",
+                url: "http://localhost:9000/file/upimg",
+                cache: false,// 是否缓存
+                data: formData,
+                processData: false,//不转换成json字符串
+                contentType: false,//发送数据的格式，默认格式
+                success: function (response) {
+                    console.log(response)
+                }
+            });
+        }
+    </script>
+</body>
+<script>
+
+
+</script>
+
+</html>
